@@ -1,3 +1,4 @@
 # run with cmd/terminal pip install -r requirements.txt
 
 flask
+gunicorn==19.9.0
