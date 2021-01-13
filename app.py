@@ -22,7 +22,7 @@ def home():
 
 @app.route('/process', methods=['POST'])
 def process():  ##called when user input is given and submit button is pressed
-    global userID
+    global userID,userconvo
     print("Process Called")
     userconvoprev = request.form["userconvo"]
     user_input = request.form["user_input"]
