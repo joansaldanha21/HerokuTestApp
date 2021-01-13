@@ -49,7 +49,7 @@ def process():  ##called when user input is given and submit button is pressed
 #---- Kicking of the main program ----
 
 if __name__ == "__main__":
-    app.run(threaded=True,debug=True)
+    app.run(debug=True)
 
 
 
