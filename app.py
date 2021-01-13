@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request, app
 
+
+global userconvo
+userconvo = []
+
 # --- User Interface ---
 
 app = Flask(__name__)
@@ -7,7 +11,6 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     global userID,userconvo
-    userconvo = []
     userID = 123
     intro=[]
     intro.append("Bot : Hi, I am AssistBot. Your customer service agent. How may I help you?")
